@@ -36,8 +36,8 @@
             "sources": [
                 { 
                     "type": "archive", 
-                    "url": "https://download.kde.org/stable/release-service/21.08.2/src/minuet-21.08.2.tar.xz",
-                    "sha256": "9bdcfcee701fbecec1a28ef685ba4d0e73f9d34726875a44c4352b25783f238e"
+                    "url": "https://download.kde.org/stable/release-service/21.08.3/src/minuet-21.08.3.tar.xz",
+                    "sha256": "68cd2305b94328d115ffbc71aa1f87961bd158b29524e01e1537f13684844cbc"
                 }                
             ]
         }
