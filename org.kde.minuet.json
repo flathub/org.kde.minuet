@@ -11,13 +11,12 @@
         "/share/man"
     ],
     "finish-args": [
-        "--socket=pulseaudio", 
-        "--share=ipc", 
-        "--socket=x11", 
+        "--socket=pulseaudio",
+        "--share=ipc",
+        "--socket=x11",
         "--socket=wayland",
         "--device=dri"
     ],
-
     "modules": [
         {
             "name": "fluidsynth",
@@ -25,8 +24,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.2.5.tar.gz",
-                    "sha256": "9037e703617f91c4c36039a5059e0f624164799d856af715bcd8a23c07ba03b8",
+                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.2.6.tar.gz",
+                    "sha256": "ca90fe675cacd9a7b442662783c4e7fa0e1fd638b28d64105a4e3fe0f618d20f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10437,
@@ -40,8 +39,8 @@
             "name": "minuet",
             "buildsystem": "cmake-ninja",
             "sources": [
-                { 
-                    "type": "archive", 
+                {
+                    "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/21.12.3/src/minuet-21.12.3.tar.xz",
                     "sha256": "99ba3110361928bcdc91292a79817c6abadc62e87af373e4e7eb0909e4f8c864",
                     "x-checker-data": {
@@ -50,7 +49,7 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/minuet-$version.tar.xz"
                     }
-                }                
+                }
             ]
         }
     ]
