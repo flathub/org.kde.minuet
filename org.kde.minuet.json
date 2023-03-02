@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.2/src/minuet-22.12.2.tar.xz",
-                    "sha256": "83b110df24a3c29dd43d95a05544ab3c4591a93cd42b302bff47f05d313f36c9",
+                    "url": "https://download.kde.org/stable/release-service/22.12.3/src/minuet-22.12.3.tar.xz",
+                    "sha256": "d45a8f6db0b4065ee78795934a659a848cab4b7f11a99f4114a3c4f1d81e7c54",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
