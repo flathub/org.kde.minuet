@@ -11,11 +11,11 @@
         "/share/man"
     ],
     "finish-args": [
-        "--socket=pulseaudio",
+        "--device=dri",
         "--share=ipc",
-        "--socket=x11",
-        "--socket=wayland",
-        "--device=dri"
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland"
     ],
     "modules": [
         {
