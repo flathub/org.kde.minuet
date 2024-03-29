@@ -1,7 +1,7 @@
 {
     "id": "org.kde.minuet",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
     "command": "minuet",
     "rename-icon": "minuet",
@@ -11,11 +11,11 @@
         "/share/man"
     ],
     "finish-args": [
-        "--socket=pulseaudio",
+        "--device=dri",
         "--share=ipc",
-        "--socket=x11",
-        "--socket=wayland",
-        "--device=dri"
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland"
     ],
     "modules": [
         {
@@ -38,6 +38,9 @@
         {
             "name": "minuet",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_WITH_QT6=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
