@@ -52,6 +52,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/minuet-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "mr-37.patch"
                 }
             ]
         }

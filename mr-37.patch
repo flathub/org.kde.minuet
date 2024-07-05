@@ -1,0 +1,37 @@
+From 0f4edd7ebf2eede65617320ae0c81c6bbc8a9e4b Mon Sep 17 00:00:00 2001
+From: bhhtt <bbhtt.zn0i8@slmail.me>
+Date: Thu, 4 Jul 2024 06:43:01 +0530
+Subject: [PATCH] Don't install svg icons of different sizes
+
+The highest 128 px svg is enough
+---
+ src/app/CMakeLists.txt                                    | 7 +------
+ src/app/icons/{128-apps-minuet.svg => sc-apps-minuet.svg} | 0
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+ rename src/app/icons/{128-apps-minuet.svg => sc-apps-minuet.svg} (100%)
+
+diff --git a/src/app/CMakeLists.txt b/src/app/CMakeLists.txt
+index 0de3929..fcfa527 100644
+--- a/src/app/CMakeLists.txt
++++ b/src/app/CMakeLists.txt
+@@ -20,12 +20,7 @@ IF(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Android")
+ 
+     set(minuet_ICONS_SVG
+         ${CMAKE_CURRENT_SOURCE_DIR}/icons/sc-apps-minuet.svgz
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-apps-minuet.svg
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/22-apps-minuet.svg
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/32-apps-minuet.svg
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/48-apps-minuet.svg
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/64-apps-minuet.svg
+-        ${CMAKE_CURRENT_SOURCE_DIR}/icons/128-apps-minuet.svg
++        ${CMAKE_CURRENT_SOURCE_DIR}/icons/sc-apps-minuet.svg
+         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-scales.svg
+         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-intervals.svg
+         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-chords.svg
+diff --git a/src/app/icons/128-apps-minuet.svg b/src/app/icons/sc-apps-minuet.svg
+similarity index 100%
+rename from src/app/icons/128-apps-minuet.svg
+rename to src/app/icons/sc-apps-minuet.svg
+-- 
+GitLab
+
