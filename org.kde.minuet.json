@@ -1,7 +1,7 @@
 {
     "id": "org.kde.minuet",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "command": "minuet",
     "rename-icon": "minuet",
@@ -38,6 +38,9 @@
                 {
                     "name": "gcem",
                     "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
