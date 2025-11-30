@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.2/src/minuet-25.08.2.tar.xz",
-                    "sha256": "a95e3d9bf39ffbe149e6fcb9a64e42bf5fbb57f1723eb89218a0e56a8074884a",
+                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/minuet-25.08.3.tar.xz",
+                    "sha256": "102b3925a0e5b437a6f3e133abcae8676238972a9d68c4666c1aa76e51b9ba44",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
