@@ -6,8 +6,10 @@
     "command": "minuet",
     "rename-icon": "minuet",
     "cleanup": [
-        "/lib64/pkgconfig",
         "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/doc",
         "/share/man"
     ],
     "finish-args": [
