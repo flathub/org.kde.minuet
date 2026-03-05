@@ -26,8 +26,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.5.2.tar.gz",
-                    "sha256": "1dcb13308b3aa383db658c60a7b63d73d0ff4601ccee589582ba7a816475410e",
+                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.5.3.tar.gz",
+                    "sha256": "6f247edfb4b91b927efc68c8884cec2ec345c8007afe6b59558cc52a67ef2517",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10437,
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.2/src/minuet-25.12.2.tar.xz",
-                    "sha256": "0eea2271f8233beb666be379c924937a45cfa39783f633eb5718304202c2939f",
+                    "url": "https://download.kde.org/stable/release-service/25.12.3/src/minuet-25.12.3.tar.xz",
+                    "sha256": "e0c9c852df80afb1738087efe6055d8402fff9e696422f186d0fec204b3cd0d3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
