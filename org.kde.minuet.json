@@ -65,6 +65,7 @@
                     "url": "https://download.kde.org/stable/release-service/25.12.3/src/minuet-25.12.3.tar.xz",
                     "sha256": "e0c9c852df80afb1738087efe6055d8402fff9e696422f186d0fec204b3cd0d3",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
