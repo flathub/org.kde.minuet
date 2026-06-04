@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.1/src/minuet-26.04.1.tar.xz",
-                    "sha256": "dd1bbe05276cbdb0b9252128c967676bd5cf02363a8a5b73b32da47909eeeaa2",
+                    "url": "https://download.kde.org/stable/release-service/26.04.2/src/minuet-26.04.2.tar.xz",
+                    "sha256": "d870e4a36d748d603268d6aab90f2e0005beb743b8d3cfd7a93ccd65e2682dee",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
