@@ -1,7 +1,7 @@
 {
     "id": "org.kde.minuet",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.10",
+    "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "minuet",
     "rename-icon": "minuet",
@@ -26,8 +26,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.5.4.tar.gz",
-                    "sha256": "72f5720328fe44e2e5c67813885f0a6b4b004d048bd2eeeb0c0064074ebff530",
+                    "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.0.tar.gz",
+                    "sha256": "6d17570ea2086dd6fbcac995465773a6f316e689089b7fb7ba0b34c2ec6f680d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10437,
@@ -54,6 +54,38 @@
             ]
         },
         {
+            "name": "kirigami-addons",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/kirigami-addons.git",
+                    "commit": "de44930275fc83f7728a210985c42ab6c3517539",
+                    "tag": "v1.13.1"
+                }
+            ]
+        },
+        {
+            "name": "aubio",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 waf configure --prefix=/app --libdir=/app/lib --disable-docs --disable-tests --disable-examples --disable-jack --disable-sndfile --disable-avcodec --disable-samplerate",
+                "python3 waf build",
+                "python3 waf install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/a/aubio/aubio-0.4.9.tar.gz",
+                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202"
+                },
+                {
+                    "type": "patch",
+                    "path": "aubio-python313.patch"
+                }
+            ]
+        },
+        {
             "name": "minuet",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -62,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.2/src/minuet-26.04.2.tar.xz",
-                    "sha256": "d870e4a36d748d603268d6aab90f2e0005beb743b8d3cfd7a93ccd65e2682dee",
+                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/minuet-26.08.0.tar.xz",
+                    "sha256": "0b2352b345d5a07f3a8b3f566e084a0c387dbafa62df5da0416e292a911ba1b6",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
