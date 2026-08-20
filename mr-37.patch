@@ -14,24 +14,23 @@ diff --git a/src/app/CMakeLists.txt b/src/app/CMakeLists.txt
 index 0de3929..fcfa527 100644
 --- a/src/app/CMakeLists.txt
 +++ b/src/app/CMakeLists.txt
-@@ -20,12 +20,7 @@ IF(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Android")
+@@ -38,12 +38,7 @@ if(NOT MINUET_MOBILE_PLATFORM)
  
-     set(minuet_ICONS_SVG
-         ${CMAKE_CURRENT_SOURCE_DIR}/icons/sc-apps-minuet.svgz
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-apps-minuet.svg
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/22-apps-minuet.svg
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/32-apps-minuet.svg
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/48-apps-minuet.svg
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/64-apps-minuet.svg
--        ${CMAKE_CURRENT_SOURCE_DIR}/icons/128-apps-minuet.svg
-+        ${CMAKE_CURRENT_SOURCE_DIR}/icons/sc-apps-minuet.svg
-         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-scales.svg
-         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-intervals.svg
-         ${CMAKE_CURRENT_SOURCE_DIR}/icons/16-actions-minuet-chords.svg
+     set(MINUET_ICONS_SVG
+         ${_minuet_icon_dir}/sc-apps-minuet.svgz
+-        ${_minuet_icon_dir}/16-apps-minuet.svg
+-        ${_minuet_icon_dir}/22-apps-minuet.svg
+-        ${_minuet_icon_dir}/32-apps-minuet.svg
+-        ${_minuet_icon_dir}/48-apps-minuet.svg
+-        ${_minuet_icon_dir}/64-apps-minuet.svg
+-        ${_minuet_icon_dir}/128-apps-minuet.svg
++        ${_minuet_icon_dir}/sc-apps-minuet.svg
+         ${_minuet_icon_dir}/16-actions-minuet-scales-symbolic.svg
+         ${_minuet_icon_dir}/16-actions-minuet-intervals-symbolic.svg
+         ${_minuet_icon_dir}/16-actions-minuet-chords-symbolic.svg
 diff --git a/src/app/icons/128-apps-minuet.svg b/src/app/icons/sc-apps-minuet.svg
 similarity index 100%
 rename from src/app/icons/128-apps-minuet.svg
 rename to src/app/icons/sc-apps-minuet.svg
 -- 
 GitLab
-
